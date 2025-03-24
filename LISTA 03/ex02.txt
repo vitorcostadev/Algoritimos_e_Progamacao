@@ -1,0 +1,72 @@
+2. Determine o resultado da execução dos algoritmos abaixo, sendo que variáveis a, b e c recebam na leitura os
+valores 1, 3 e 15, respectivamente. Quantas e quais expressões lógicas são avaliadas?
+
+ALGORITMO exercicio_2A
+
+VARIÁVEIS
+
+ INTEIRO: a, b, c, max
+
+INÍCIO
+ LEIA (a, b, c)
+ SE a > b ENTAO [1a.]
+ SE a > c ENTAO [2a.]
+ max ← a
+ SENAO
+ max ← c
+ FIMSE
+ SENAO
+ SE b > c ENTAO [3a.]
+ max ← b
+ SENAO
+ max ← c
+ FIMSE
+ FIMSE
+ ESCREVA (“Maior entre “, a, “ “, b, “ “, c, “: “, max)
+FIM 
+
+// ANALISE 
+
+Neste algoritimo, o programa solicita três números do teclado, e como já sabemos, vamos considerar
+que esses números sejam 1, 3 e 15.
+
+Na primeira verificação lógica, o programa verifica se a variavel A é maior que B, que no nosso caso,
+não é verdadeiro, já que A é igual a 1, e B é igual a 3.
+
+Então, o código vai cair para o SENAO, e no bloco de comando do SENAO, ele verifica se a variavel B é maior
+do que C, que no nosso caso, também é falso, já que B é igual a 3, e C é igual a 15.
+
+E agora, o código ja verificou dois dos três numeros, então sabemos que o C é o maior número dentre os tres.
+
+================================================= // =========================================================
+
+ALGORITMO "exercicio_2B"
+
+VARIÁVEIS
+ INTEIRO: a, b, c, max
+
+INÍCIO
+ LEIA (a, b, c)
+ SE (a > b) E (a > c) ENTAO [1a.]
+ max ← a
+ FIMSE
+ SE (b > a) E (b > c) ENTAO [2a.]
+ max ← b
+ FIMSE
+ SE (c > a) E (c > b) ENTAO [3a.]
+ max ← c
+ FIMSE
+ ESCREVA (“Maior entre “, a, “ “, b, “ “, c, “: “, max)
+FIM 
+
+// ANALISE 
+
+Já neste algoritimo, que segue a mesma ideia do exercício anterior, iremos verificar o maior número dentre os 3 que recebemos, que,
+como ja sabemos, são 1, 3 e 15 respectivamente.
+
+Na primeira verificação lógica, o código verifica se A é maior do que B e se A é maior do que C, mas esta verificação é falsa.
+Ja que no teste, o código iria verificar se 1 é maior do que 3, o que é falso.
+
+E como o primeiro SE retornou False, o código continua e vai para o próximo SE, esse que segue a mesma lógica do primeiro SE,
+mas invés de verificar a variavel A, vai testar com a variavel B, e se esse teste retornar False, parte para o último SE, 
+que vai testar agora com a variavel C, essa que, sabemos que é a maior dentre os três numeros.

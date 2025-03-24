@@ -1,0 +1,47 @@
+1. Atribua valores para as variáveis usadas e determine o resultado da execução dos algoritmos abaixo:
+
+ALGORITMO "exercicio_1A"
+
+VARIÁVEIS
+ INTEIRO: numero
+
+INÍCIO
+ LEIA (numero)
+ SE (numero >= 20) E (numero <= 90) ENTAO
+ ESCREVA (“Numero no intervalo [20,90]”)
+ SENAO
+ ESCREVA (“Numero fora do intervalo [20,90]”)
+ FIMSE
+FIM 
+
+// ANALISE 
+
+O algoritimo acima realiza um pequeno teste para verificar se o número que foi passado como argumento
+na variável "numero" está dentro do intervalo fechado de 20 à 90.
+
+Se caso o número for menor do que o valor mínimo (20) ou maior que o valor máxímo (90) do intervalo, o programa retorna
+o bloco de comando do SENAO. Caso contrário, apenas executa o bloco de comando do SE.
+
+========================================================= // =============================================================
+
+ALGORITMO 'exercicio_1B'
+
+VARIÁVEIS
+ CARACTER: sexo
+
+INÍCIO
+ LEIA (sexo)
+ SE (sexo = ‘m”) OU (sexo = ‘f”) ENTAO
+ ESCREVA (“Sexo válido”)
+ SENAO
+ ESCREVA (“Dado incorreto”)
+ FIMSE
+FIM
+
+// ANALISE
+
+Este algoritimo realiza uma verificação de genêro, onde o programa solicita um caractere do console, e após isso, realiza a validação de dados
+para retornar a mensagem de acordo com o que foi inserido.
+
+Na parte da verificação lógica (SE) o mesmo verifica se o caractere digitado é "M" ou "F", para então, retornar o bloco de comando do SE, caso verdadeiro.
+Caso contrário, apenas retorna o bloco de comando do SENAO.
